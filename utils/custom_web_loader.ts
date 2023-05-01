@@ -25,10 +25,10 @@ export class CustomWebLoader
 
   async load(): Promise<Document[]> {
     const $ = await this.scrape();
-    const title = $('h1.entry-title').text();
+    const title = $('h1').text();
     const date = $('meta[property="article:published_time"]').attr('content');
 
-    const content = $('.entry-content')
+    const content = $('.page__content.page-content-style')
       .clone()
       .find('div.elementor, style')
       .remove()

@@ -17,7 +17,7 @@ export default function Home() {
   }>({
     messages: [
       {
-        message: 'Hi there its Tom! What would like to learn about notion?',
+        message: 'u ready to fix ur habits?',
         type: 'apiMessage',
       },
     ],
@@ -124,7 +124,7 @@ export default function Home() {
       <Layout>
         <div className="mx-auto flex flex-col gap-4">
           <h1 className="text-2xl font-bold leading-[1.1] tracking-tighter text-center">
-            Thomas Frank Notion Guide ChatBot
+            Atomic Habits
           </h1>
           <main className={styles.main}>
             <div className={styles.cloud}>
@@ -135,7 +135,7 @@ export default function Home() {
                   if (message.type === 'apiMessage') {
                     icon = (
                       <Image
-                        src="/Thomas-Frank-Avatar.jpg"
+                        src="/luckyzero-modified.png"
                         alt="AI"
                         width="40"
                         height="40"
@@ -189,7 +189,7 @@ export default function Home() {
                     placeholder={
                       loading
                         ? 'Waiting for response...'
-                        : 'How does notion api work?'
+                        : 'How does one keep a habit?'
                     }
                     value={query}
                     onChange={(e) => setQuery(e.target.value)}
